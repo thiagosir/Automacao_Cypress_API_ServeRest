@@ -1,0 +1,164 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-06-22T16:18:30.313Z",
+    "end": "2022-06-22T16:18:31.911Z",
+    "duration": 1598,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "efbbccf0-2d89-41d5-bd75-4e921c9d763b",
+      "title": "",
+      "fullFile": "cypress/integration/fluxoCompraSucesso.spec.js",
+      "file": "cypress/integration/fluxoCompraSucesso.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b3604c2-4f9b-4add-9d8c-21f8328f8872",
+          "title": "Fluxo prioritário (Concluir-compra) da API Serverest",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "f432baef-2278-4dfc-9d29-cf74ae369c62",
+              "title": "Logando com sucesso",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Deve criar um produto",
+                  "fullTitle": "Fluxo prioritário (Concluir-compra) da API Serverest Logando com sucesso Deve criar um produto",
+                  "timedOut": null,
+                  "duration": 721,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_produtos.default.adicionarProdutoComSucesso().then(res => {\n  cy.writeFile('./cypress/fixtures/produtoId.json', res);\n  cy.validacaoContrato(res, 'post-produtos', 201).then(res => expect(res).to.be.eq('Contrato válido'));\n  _validaServerest.default.validarAdicaoDeProdutoComSucesso(res);\n});",
+                  "err": {},
+                  "uuid": "6ccd594d-198c-481c-ae60-7153b474d75e",
+                  "parentUUID": "f432baef-2278-4dfc-9d29-cf74ae369c62",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Deve criar um carrinho e adicionar produtos ligados à ele",
+                  "fullTitle": "Fluxo prioritário (Concluir-compra) da API Serverest Logando com sucesso Deve criar um carrinho e adicionar produtos ligados à ele",
+                  "timedOut": null,
+                  "duration": 237,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_carrinhos.default.adicionarCarrinhoComSucesso().then(res => {\n  cy.validacaoContrato(res, 'post-carrinhos', 201).then(res => expect(res).to.be.eq('Contrato válido'));\n  _validaServerest.default.validarAdicaoDeCarrinhos(res);\n});",
+                  "err": {},
+                  "uuid": "414dabfc-c6fc-4397-810c-f87f27039766",
+                  "parentUUID": "f432baef-2278-4dfc-9d29-cf74ae369c62",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Deve deletar um carrinho-concluir e deletar o usuário",
+                  "fullTitle": "Fluxo prioritário (Concluir-compra) da API Serverest Logando com sucesso Deve deletar um carrinho-concluir e deletar o usuário",
+                  "timedOut": null,
+                  "duration": 616,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "_carrinhos.default.deletarCarrinhoConcluirComSucesso().then(res => {\n  cy.validacaoContrato(res, 'delete-carrinhos-concluir', 200).then(res => expect(res).to.be.eq('Contrato válido'));\n  _validaServerest.default.validarRemocaoDeCarrinhoConcluirComSucesso(res);\n  _produtos.default.deletarProduto().then(res => {\n    _validaServerest.default.validarRemocaoDeProdutoComSucesso(res);\n  });\n  _usuarios.default.deletarUsuarioComSucesso().then(res => {\n    _validaServerest.default.validaRemocaoDeUsuarioComSucesso(res);\n  });\n});",
+                  "err": {},
+                  "uuid": "c0b38fcf-5bcb-407a-b756-00ef3b9eb5f3",
+                  "parentUUID": "f432baef-2278-4dfc-9d29-cf74ae369c62",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "6ccd594d-198c-481c-ae60-7153b474d75e",
+                "414dabfc-c6fc-4397-810c-f87f27039766",
+                "c0b38fcf-5bcb-407a-b756-00ef3b9eb5f3"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1574,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

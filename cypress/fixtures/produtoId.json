@@ -1,0 +1,70 @@
+{
+  "body": {
+    "message": "Cadastro realizado com sucesso",
+    "_id": "rREkvxx1HDqgmKOW"
+  },
+  "headers": {
+    "access-control-allow-origin": "*",
+    "x-dns-prefetch-control": "off",
+    "x-frame-options": "SAMEORIGIN",
+    "strict-transport-security": "max-age=15552000; includeSubDomains",
+    "x-download-options": "noopen",
+    "x-content-type-options": "nosniff",
+    "x-xss-protection": "1; mode=block",
+    "x-moesif-transaction-id": "0523988d-c1af-4022-91be-92ddcf0e2822",
+    "content-type": "application/json; charset=utf-8",
+    "x-cloud-trace-context": "2527af2d0ce3ab5b58d5604c1e53398f",
+    "date": "Wed, 22 Jun 2022 16:18:47 GMT",
+    "server": "Google Frontend",
+    "content-length": "82"
+  },
+  "status": 201,
+  "statusText": "Created",
+  "isOkStatusCode": true,
+  "requestHeaders": {
+    "Connection": "keep-alive",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.7.0 Chrome/100.0.4896.75 Electron/18.0.4 Safari/537.36",
+    "accept": "*/*",
+    "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVkbXVuZC5CcmVra2VAaG90bWFpbC5jb20iLCJwYXNzd29yZCI6InlRazh4X2VoYU5XZ0l4WiIsImlhdCI6MTY1NTkxNDcyNiwiZXhwIjoxNjU1OTE1MzI2fQ.a3a6wf6aJJY5ogY4H36m42p6rsot1gHxkeh7__I92Q0",
+    "accept-encoding": "gzip, deflate",
+    "content-type": "application/json",
+    "content-length": 194
+  },
+  "requestBody": "{\"nome\":\"Handmade Soft Keyboard\",\"preco\":43822,\"descricao\":\"New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart\",\"quantidade\":71197}",
+  "duration": 194,
+  "allRequestResponses": [
+    {
+      "Request Body": "{\"nome\":\"Handmade Soft Keyboard\",\"preco\":43822,\"descricao\":\"New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart\",\"quantidade\":71197}",
+      "Request Headers": {
+        "Connection": "keep-alive",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/9.7.0 Chrome/100.0.4896.75 Electron/18.0.4 Safari/537.36",
+        "accept": "*/*",
+        "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkVkbXVuZC5CcmVra2VAaG90bWFpbC5jb20iLCJwYXNzd29yZCI6InlRazh4X2VoYU5XZ0l4WiIsImlhdCI6MTY1NTkxNDcyNiwiZXhwIjoxNjU1OTE1MzI2fQ.a3a6wf6aJJY5ogY4H36m42p6rsot1gHxkeh7__I92Q0",
+        "accept-encoding": "gzip, deflate",
+        "content-type": "application/json",
+        "content-length": 194
+      },
+      "Request URL": "https://serverest.dev/produtos",
+      "Response Body": {
+        "message": "Cadastro realizado com sucesso",
+        "_id": "rREkvxx1HDqgmKOW"
+      },
+      "Response Headers": {
+        "access-control-allow-origin": "*",
+        "x-dns-prefetch-control": "off",
+        "x-frame-options": "SAMEORIGIN",
+        "strict-transport-security": "max-age=15552000; includeSubDomains",
+        "x-download-options": "noopen",
+        "x-content-type-options": "nosniff",
+        "x-xss-protection": "1; mode=block",
+        "x-moesif-transaction-id": "0523988d-c1af-4022-91be-92ddcf0e2822",
+        "content-type": "application/json; charset=utf-8",
+        "x-cloud-trace-context": "2527af2d0ce3ab5b58d5604c1e53398f",
+        "date": "Wed, 22 Jun 2022 16:18:47 GMT",
+        "server": "Google Frontend",
+        "content-length": "82"
+      },
+      "Response Status": 201
+    }
+  ]
+}
